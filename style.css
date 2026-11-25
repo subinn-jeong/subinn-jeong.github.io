@@ -243,3 +243,12 @@ main section { box-shadow: inset 0 3px 0 #83b9e5, 0 2px 8px rgba(40,105,155,.045
 .links .profile-link:hover { background: #dceefa; color: #184f79; border-color: #9ec8e8; }
 .links .profile-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .links .profile-link { transition: none; } }
+
+/* Light blue section icons and compact chronological timelines. */
+.section-icon { display: inline-block; width: 16px; height: 16px; margin-right: 6px; vertical-align: -2px; color: #5396c7; }
+.overview-grid #education .education-item, .overview-grid #experience .publication-item { position: relative; padding-left: 15px; border-top: 0; --timeline-pad: 9px; }
+.overview-grid #experience .publication-item { --timeline-pad: 6px; }
+.overview-grid #education .education-item:first-child, .overview-grid #experience .publication-item:first-child { --timeline-pad: 0px; }
+.overview-grid #education .education-item::before, .overview-grid #experience .publication-item::before { content: ""; position: absolute; left: 0; top: calc(var(--timeline-pad) + 4px); width: 8px; height: 8px; box-sizing: border-box; border: 1.5px solid #5396c7; border-radius: 50%; background: #fff; z-index: 1; }
+.overview-grid #education .education-item:not(:last-child)::after, .overview-grid #experience .publication-item:not(:last-child)::after { content: ""; position: absolute; left: 3.5px; top: calc(var(--timeline-pad) + 8px); bottom: -13px; width: 1px; background: #b9d8ef; }
+.overview-grid #experience .publication-item:not(:last-child)::after { bottom: -10px; }
