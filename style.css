@@ -193,3 +193,30 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px
 @media (max-width: 650px) {
   .overview-grid { grid-template-columns: 1fr; }
 }
+
+/* Four-column academic overview: profile, research biography, education, experience. */
+.overview-grid { grid-template-columns: minmax(0,.88fr) minmax(0,1.55fr) minmax(0,1.15fr) minmax(0,1.2fr); align-items: stretch; }
+.overview-grid > .overview-stack { grid-column: auto; display: flex; align-items: stretch; min-width: 0; }
+.overview-grid section { padding: 16px 17px; }
+.overview-grid #about { flex: 1 0 auto; }
+#about p { line-height: 1.7; }
+#about p + p { margin-top: 11px; }
+.overview-grid #education { flex: 0 0 auto; }
+.overview-grid #education .education-list { flex: 0 0 auto; justify-content: flex-start; }
+.overview-grid #education .education-item { padding: 9px 0; }
+.overview-grid #education .education-item:first-child { padding-top: 0; }
+.overview-grid #education .education-item:last-child { padding-bottom: 0; }
+.overview-grid #certifications { flex: 1 0 auto; }
+.overview-grid #experience { flex: 1 0 auto; }
+.overview-grid #skills { flex: 0 0 auto; }
+.overview-grid #research { flex: 0 0 auto; }
+.overview-grid .profile { flex: 1 0 auto; }
+.overview-grid .interests { gap: 6px; }
+@media (max-width: 1100px) {
+  .overview-grid { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; }
+  .overview-grid > .overview-stack:last-child { grid-column: auto; display: flex; }
+  .overview-grid section, .overview-grid #about, .overview-grid #education, .overview-grid #certifications, .overview-grid #experience, .overview-grid .profile { flex: 0 0 auto; }
+}
+@media (max-width: 650px) {
+  .overview-grid { grid-template-columns: 1fr; }
+}
