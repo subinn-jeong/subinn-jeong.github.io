@@ -161,3 +161,10 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px
 @media (max-width: 1000px) {
   .overview-grid #about { flex: 0 0 auto; }
 }
+
+/* Publication counts and author-role legends next to section headings. */
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; padding-bottom: 9px; margin-bottom: 13px; border-bottom: 1px solid #e9edf1; }
+.section-heading h2 { margin: 0; padding: 0; border: 0; }
+.paper-count { display: inline-block; margin-left: 7px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: 0; white-space: nowrap; }
+.heading-note { font-size: 11px; color: var(--muted); font-weight: 400; }
+@media (max-width: 520px) { .section-heading { align-items: flex-start; } }
