@@ -133,3 +133,23 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px
   .journal-figure { max-width: 290px; width: 100%; }
   .overview-grid .profile-photo { width: 130px; max-height: 175px; }
 }
+
+/* Overview: profile/research, bio/education, experience/skills/certifications. */
+.overview-grid { grid-template-columns: minmax(0,.92fr) minmax(0,1.36fr) minmax(0,1.36fr); }
+.overview-grid #about { flex: 0 0 auto; }
+.overview-grid #education { flex: 1 0 auto; }
+.overview-grid #research { flex: 0 0 auto; }
+.overview-grid #experience { flex: 1 0 auto; }
+.overview-grid #skills, .overview-grid #certifications { flex: 0 0 auto; }
+.overview-grid #experience .publication-item { padding: 6px 0; }
+.overview-grid #experience .publication-item:first-child { padding-top: 0; }
+.overview-grid #experience .publication-item:last-child { padding-bottom: 0; }
+@media (max-width: 1000px) {
+  .overview-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .overview-grid > .overview-stack:last-child { grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; }
+  .overview-grid section { flex-grow: 0; }
+}
+@media (max-width: 650px) {
+  .overview-grid { grid-template-columns: 1fr; }
+  .overview-grid > .overview-stack:last-child { display: flex; }
+}
