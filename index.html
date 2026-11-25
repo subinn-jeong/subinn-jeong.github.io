@@ -5,23 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Subin Jeong, Ph.D. student at Dongguk University, researching cloud computing, resource management, and container autoscaling.">
   <title>Subin Jeong | Academic Homepage</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
-  <main>
-    <section id="about" class="intro" aria-labelledby="name">
-      <div class="intro-text">
+  <main class="dashboard">
+    <div class="overview-grid">
+      <section id="profile" class="profile" aria-labelledby="name">
+      <img class="profile-photo" src="profile.jpg" alt="Portrait of Subin Jeong" decoding="async">
       <h1 id="name">Subin Jeong <span lang="ko" class="korean-name">정수빈</span></h1>
-      <p>I am a Ph.D. student in the Department of Computer Science and Artificial Intelligence at <a href="https://www.dongguk.edu/">Dongguk University</a> in Seoul, South Korea, and a member of the <a href="https://ucloud-lab.dongguk.edu/">uCloud computing Lab.</a>, advised by Prof. Young-Sik Jeong. My research focuses on resource management and container autoscaling in cloud and cloud-native computing environments.</p>
+      <p class="profile-role">Ph.D. Student</p>
+      <p class="profile-school">Dongguk University</p>
       <div class="links" aria-label="Academic profiles and contact">
         <a href="mailto:soo1915@dgu.ac.kr">Email</a>
         <a href="https://scholar.google.com/citations?user=GPD8lyYAAAAJ">Google Scholar</a>
         <a href="https://orcid.org/0009-0003-4847-1530">ORCID</a>
         <a href="https://github.com/subinn-jeong">GitHub</a>
       </div>
-      </div>
-      <img class="profile-photo" src="profile.jpg" alt="Portrait of Subin Jeong" decoding="async">
     </section>
+      <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>I am a Ph.D. student in the Department of Computer Science and Artificial Intelligence at <a href="https://www.dongguk.edu/">Dongguk University</a> in Seoul, South Korea, and a member of the <a href="https://ucloud-lab.dongguk.edu/">uCloud computing Lab.</a>, advised by Prof. Young-Sik Jeong. My research focuses on resource management and container autoscaling in cloud and cloud-native computing environments.</p>
+    </section>
+      <div class="overview-stack">
     <section id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research Interests</h2>
       <ul class="interests">
@@ -45,6 +50,23 @@
         </article>
       </div>
     </section>
+      </div>
+      <div class="overview-stack">
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical Skills</h2>
+      <div class="skill-group"><h3>Programming &amp; ML</h3><ul class="skill-tags"><li>Python</li><li>PyTorch</li></ul></div>
+      <div class="skill-group"><h3>Cloud &amp; Infrastructure</h3><ul class="skill-tags"><li>Linux</li><li>Docker</li><li>Kubernetes</li><li>Prometheus</li></ul></div>
+    </section>
+    <section id="certifications" aria-labelledby="certifications-title">
+      <h2 id="certifications-title">Certifications</h2>
+      <ul>
+        <li><strong>Engineer Information Processing</strong> — Human Resources Development Service of Korea (HRD Korea)</li>
+        <li><strong>SQL Developer (SQLD)</strong> — Korea Data Agency (K-DATA)</li>
+      </ul>
+    </section>
+      </div>
+    </div>
+    <div class="detail-grid">
     <section id="publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
       <h3 class="subheading">Journal Articles</h3>
@@ -121,6 +143,7 @@
       </div>
       <p class="publication-note">† Co-author &nbsp;·&nbsp; * Corresponding author</p>
     </section>
+      <div class="detail-stack">
     <section id="software" aria-labelledby="software-title">
       <h2 id="software-title">Software Registrations</h2>
       <div class="publication-list">
@@ -131,32 +154,6 @@
             <p class="authors">Young-Sik Jeong, Byeonghui Jeong, Seungyeon Baek, <strong>Subin Jeong</strong></p>
             <p class="venue"><em>Korea Copyright Commission (KCC)</em></p>
             <p class="pub-detail">Registration No. C-2026-025321</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">Professional Experience</h2>
-      <div class="publication-list">
-        <article class="publication-item">
-          <div class="pub-date">Mar. 2026 – Present</div>
-          <div class="pub-content">
-            <h4>Research Assistant (RA)</h4>
-            <p class="venue"><a href="https://ucloud-lab.dongguk.edu/">uCloud computing Lab.</a>, Dongguk University</p>
-          </div>
-        </article>
-        <article class="publication-item">
-          <div class="pub-date">Jun. – Dec. 2022</div>
-          <div class="pub-content">
-            <h4>Researcher</h4>
-            <p class="venue">Baewha Women’s University, Seoul, South Korea</p>
-          </div>
-        </article>
-        <article class="publication-item">
-          <div class="pub-date">Mar. 2021 – Feb. 2022</div>
-          <div class="pub-content">
-            <h4>Intern</h4>
-            <p class="venue">Xinapse</p>
           </div>
         </article>
       </div>
@@ -239,14 +236,35 @@
         </article>
       </div>
     </section>
-    <section id="certifications" aria-labelledby="certifications-title">
-      <h2 id="certifications-title">Certifications</h2>
-      <ul>
-        <li><strong>Engineer Information Processing</strong> — Human Resources Development Service of Korea (HRD Korea)</li>
-        <li><strong>SQL Developer (SQLD)</strong> — Korea Data Agency (K-DATA)</li>
-      </ul>
+      </div>
+    </div>
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Professional Experience</h2>
+      <div class="publication-list">
+        <article class="publication-item">
+          <div class="pub-date">Mar. 2026 – Present</div>
+          <div class="pub-content">
+            <h4>Research Assistant (RA)</h4>
+            <p class="venue"><a href="https://ucloud-lab.dongguk.edu/">uCloud computing Lab.</a>, Dongguk University</p>
+          </div>
+        </article>
+        <article class="publication-item">
+          <div class="pub-date">Jun. – Dec. 2022</div>
+          <div class="pub-content">
+            <h4>Researcher</h4>
+            <p class="venue">Baewha Women’s University, Seoul, South Korea</p>
+          </div>
+        </article>
+        <article class="publication-item">
+          <div class="pub-date">Mar. 2021 – Feb. 2022</div>
+          <div class="pub-content">
+            <h4>Intern</h4>
+            <p class="venue">Xinapse</p>
+          </div>
+        </article>
+      </div>
     </section>
-    <!-- Teaching, awards and CV to be added after confirmation. -->
+    <!-- CV PDF can be linked here once available. -->
   </main>
   <footer><span>© 2026 Subin Jeong</span><a href="mailto:soo1915@dgu.ac.kr">Contact</a></footer>
 </body>
