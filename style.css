@@ -195,7 +195,7 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px
 }
 
 /* Four-column academic overview: profile, research biography, education, experience. */
-.overview-grid { grid-template-columns: minmax(0,.88fr) minmax(0,1.55fr) minmax(0,1.15fr) minmax(0,1.2fr); align-items: stretch; }
+.overview-grid { grid-template-columns: minmax(0,.88fr) repeat(3,minmax(0,1.3fr)); align-items: stretch; }
 .overview-grid > .overview-stack { grid-column: auto; display: flex; align-items: stretch; min-width: 0; }
 .overview-grid section { padding: 16px 17px; }
 .overview-grid #about { flex: 1 0 auto; }
