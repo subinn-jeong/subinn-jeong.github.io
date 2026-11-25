@@ -153,3 +153,11 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px
   .overview-grid { grid-template-columns: 1fr; }
   .overview-grid > .overview-stack:last-child { display: flex; }
 }
+
+/* Keep education at its natural height and allocate remaining space to the biography. */
+.overview-grid #education { flex: 0 0 auto; }
+.overview-grid #about { flex: 1 0 auto; }
+#about p + p { margin-top: 12px; }
+@media (max-width: 1000px) {
+  .overview-grid #about { flex: 0 0 auto; }
+}
