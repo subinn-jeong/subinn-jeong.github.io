@@ -59,7 +59,7 @@ h2 { margin: 0 0 13px; font-size: 17px; font-weight: 650; letter-spacing: -.022e
 .pub-content .pub-detail { color: var(--muted); font-size: 12px; }
 .pub-content ul.pub-detail { margin: 5px 0 0; padding-left: 17px; }
 .publication-note { color: var(--muted); font-size: 11.5px; margin: 9px 0 0; }
-#conferences .publication-item { grid-template-columns: 1fr; gap: 4px; }
+#conferences .publication-item, #projects .publication-item, #software .publication-item, #scholarships .publication-item { grid-template-columns: minmax(0,1fr); gap: 4px; }
 #conferences .pub-status { display: inline; margin-left: 9px; }
 #experience .publication-list { display: block; }
 #experience .publication-item { display: block; padding: 8px 0; }
